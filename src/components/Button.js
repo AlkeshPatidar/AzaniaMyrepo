@@ -13,7 +13,7 @@ const CustomButton = ({ title, onPress, leftIcon, style, txtColor }) => {
             onPress={onPress}
             activeOpacity={0.5}>
             <LinearGradient
-                colors={[color.Ctaone, color.ctatwo, color.ctathree]}
+                colors={[ '#746CFF','#461499',]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={styles.buttonInner}
@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     buttonInner: {
-        minHeight: verticalScale(44),
+        minHeight: verticalScale(38),
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: moderateScale(16),
+        borderRadius: moderateScale(30),
         paddingHorizontal: moderateScale(16),
     },
     buttonText: {

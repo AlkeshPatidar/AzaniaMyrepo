@@ -96,12 +96,12 @@ const menuSections = [
         items: [
             {
                 label: 'Payroll Dashboard',
-                navigationKey: 'PayrollDashboard',
+                navigationKey: 'PayrollOverviewScreen',
                 icon: <MaterialCommunityIcons name="view-dashboard-variant-outline" size={16} color="#746CFF" />,
             },
             {
                 label: 'Pay Slips',
-                navigationKey: 'PaySlips',
+                navigationKey: 'PayslipPreviewScreen',
                 icon: <Feather name="file-text" size={16} color="#746CFF" />,
             },
             {
@@ -377,7 +377,7 @@ const styles = StyleSheet.create({
     sectionHeaderIcon: { opacity: 0.9 },
     sectionHeaderText: {
         fontSize: moderateScale(13),
-       fontFamily:FONTS_FAMILY.Natosans_Medium,
+        fontFamily: FONTS_FAMILY.Natosans_Medium,
         color: '#2B2B3B',
     },
 

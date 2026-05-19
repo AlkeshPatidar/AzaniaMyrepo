@@ -9,6 +9,7 @@ import { useLoginCheck } from '../../utils/Context'
 import { useDispatch } from 'react-redux'
 import { setUser } from '../../redux/reducer/user'
 import { syncCurrentLocationForRole } from '../../utils/locationHelpers'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const SplashScreen = ({ navigation }) => {
   const { loggedInby, setloggedInby } = useLoginCheck()
@@ -18,7 +19,9 @@ const SplashScreen = ({ navigation }) => {
     // initializeTheme()
     // loginCheck()
     setTimeout(() => {
-      navigation.navigate('Login')
+      // navigation.navigate('Login')
+      navigation.navigate('OnboardingCarousel')
+
     }, 2000)
   }, [])
 
@@ -66,13 +69,13 @@ const SplashScreen = ({ navigation }) => {
   }
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Image
         source={IMG.AzaniaLogo}
         style={{ height: 200, width: 200 }}
         resizeMode="contain"
       />
-    </View>
+    </SafeAreaView>
   )
 }
 

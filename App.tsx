@@ -101,13 +101,13 @@ const App = () => {
   return (
     <LoginCheckProvider>
       <SafeAreaProvider>
-        <SafeAreaView style={{flex: 1, backgroundColor: '#FFFFFF'}} edges={['top']}>
-          <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content" translucent={false} />
+        {/* <SafeAreaView style={{flex: 1, backgroundColor: '#FFFFFF'}} edges={['top']}> */}
+          {/* <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content" translucent={false} /> */}
           <StackNavigation />
           {/* <FlashMessage position='top' /> */}
            {/* <ToastMessage /> */}
           <Loader visible={loaderVisible} />
-        </SafeAreaView>
+        {/* </SafeAreaView> */}
       </SafeAreaProvider>
     </LoginCheckProvider>
   )
